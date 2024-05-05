@@ -70,25 +70,6 @@ export default function ProfilePage() {
         </Container>
       </Navbar>
 
-      <Container className="mx-2">
-        {user && (
-          <>
-            <h2 className="mt-3">Your profile</h2>
-            <div className="mt-4">
-              {user.profileimage && (
-                <img
-                  src={user.profileimage}
-                  alt="Profile"
-                  className="square-image"
-                />
-              )}
-              <h6>{user.username}</h6>
-              <h6>{user.description}</h6>
-            </div>
-          </>
-        )}
-      </Container>
-
       <Container className="mx-0">
         <Row>
           <ProfileSideBar handleLogout={handleLogout} />

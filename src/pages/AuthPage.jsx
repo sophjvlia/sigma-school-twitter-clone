@@ -147,6 +147,10 @@ export default function AuthPage() {
             <i className="bi bi-apple"></i> Sign up with Apple
           </Button>
 
+          <Button className="rounded-pill" variant="outline-dark">
+            <i className="bi bi-facebook"></i> Sign up with Facebook
+          </Button>
+
           <p style={{ textAlign: "center" }}>or</p>
 
           <Button className="rounded-pill" onClick={handleShowSignUp}>
@@ -197,6 +201,9 @@ export default function AuthPage() {
                 Learn more. Others will be able to find you by email or phone
                 number, when provided, unless you choose otherwise here.
               </p>
+              <p class="m-0">Login Credentials</p>
+              <p class="m-0">Email: sophie@juliana.com</p>
+              <p>Password: Test123!</p>
               <Button className="rounded-pill" type="submit">
                 {modalShow === 'SignUp' ? 'Sign up' : 'Log in' }
               </Button>
